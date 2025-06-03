@@ -1,0 +1,16 @@
+name: flutter_app_base
+description: A brick to create a Flutter application
+version: 0.1.0+1
+environment:
+  mason: ">=0.1.0"
+
+vars:
+  #app_name:
+  #  type: string
+  #  description: The name of your Flutter application
+  #  prompt: What is the name of your application?
+  #app_id:
+  #  type: string
+  #  description: The application ID (com.example.myapp)
+  #  prompt: What is your application ID?
+  #  default: com.example.app

@@ -1,0 +1,29 @@
+
+ext {
+    appName = "{{app_name}}"
+    
+    applyFlavors = { android ->
+        android.flavorDimensions "environment"
+        
+        android.productFlavors {
+            dev {
+                dimension "environment"
+                applicationIdSuffix '.dev'
+                versionNameSuffix '.dev'
+                resValue "string", "app_name", "[DEV] ${appName}"
+            }
+            
+            stg {
+                dimension "environment"
+                applicationIdSuffix '.stg'
+                versionNameSuffix '.stg'
+                resValue "string", "app_name", "[STG] ${appName}"
+            }
+            
+            prod {
+                dimension "environment"
+                resValue "string", "app_name", "${appName}"
+            }
+        }
+    }
+}

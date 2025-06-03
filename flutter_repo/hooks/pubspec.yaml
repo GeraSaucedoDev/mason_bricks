@@ -1,0 +1,10 @@
+name: flutter_app_brick_hooks
+description: Hooks for flutter_app_brick
+publish_to: none
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  mason: any
+  yaml: ^3.1.0
