@@ -10,7 +10,7 @@ import 'package:{{app_name}}/core/services/storage/token_manager.dart';
 import 'package:{{app_name}}/main_injector.dart';
 import 'package:{{app_name}}/core/services/user/user_manager.dart';
 import 'package:{{app_name}}/core/services/user/user_service.dart';
-i
+
 
 /// Services that can be used in the app,
 ///
@@ -25,7 +25,7 @@ Future<void> servicesInjector() async {
   // Internal
   sl.registerLazySingleton(() => SecureStorageService(secureStorage: sl()));
   sl.registerLazySingleton(() => TokenManager(sl()));
-  sl.registerLazySingleton(() => UserManager(sl()));
+  sl.registerLazySingleton(() => UserManager(storage: sl()));
   sl.registerLazySingleton(() => LocalStorageService(storage: sl()));
   sl.registerLazySingleton(() => ApiClient(secureStorage: sl(), dio: sl()));
   sl.registerLazySingleton(() => ConfigManager());
