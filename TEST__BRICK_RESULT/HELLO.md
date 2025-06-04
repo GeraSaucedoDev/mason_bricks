@@ -1,3 +1,0 @@
-Hello Dash!
-
-Test word 
