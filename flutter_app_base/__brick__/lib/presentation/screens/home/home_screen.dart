@@ -8,13 +8,14 @@ import 'package:{{app_name}}/core/theme/icons/app_icon.dart';
 import 'package:{{app_name}}/core/theme/icons/app_icons.dart';
 import 'package:{{app_name}}/main_injector.dart';
 import 'package:{{app_name}}/presentation/blocs/app/app_bloc.dart';
+import 'package:{{app_name}}/presentation/widgets/buttons/app_log_out_button.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
-  static const String route = '/';
-  static const String name = 'home-screen';
+  static const String screenRoute = '/';
+  static const String screenName = 'home-screen';
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -83,6 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 return Text(config.configSource ?? 'No config found');
               },
             ),
+            LogoutButton()
           ],
         ),
       ),

@@ -38,6 +38,7 @@ class LightTheme {
         useMaterial3: true,
         colorScheme: colorScheme,
         brightness: Brightness.light,
+        fontFamily: 'poppins',
         appBarTheme: AppBarTheme(
           backgroundColor: colorScheme.surface,
           foregroundColor: colorScheme.onSurface,

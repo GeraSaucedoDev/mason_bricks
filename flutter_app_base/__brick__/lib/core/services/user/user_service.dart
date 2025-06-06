@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:mason_test_a/core/services/api/api_client.dart';
-import 'package:mason_test_a/core/services/storage/local_storage_service.dart';
-import 'package:mason_test_a/domain/models/user.dart';
+import 'package:{{app_name}}/core/services/api/api_client.dart';
+import 'package:{{app_name}}/core/services/storage/local_storage_service.dart';
+import 'package:{{app_name}}/domain/models/user.dart';
 
 import '../logger/app_logger.dart';
 

@@ -31,5 +31,7 @@
   "registeredAccountTitle": "Account created successfully",
   "registeredAccountMessage": "Your account has been created. You can now sign in with your credentials.",
   "registerAnAccountText": "Don't have an account?",
-  "registerAnAccountButton": "Create account"
+  "registerAnAccountButton": "Create account",
+  "inputOtpErrorEmpty": "Code is required",
+  "inputOtpErrorLength": "Invalid code"
 }

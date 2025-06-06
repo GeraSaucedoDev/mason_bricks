@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:formz/formz.dart';
+import 'package:{{app_name}}/core/localization/extension/localization_extension.dart';
 
 enum OtpCodeValidationError { empty, length }
 
@@ -11,13 +12,11 @@ class OtpCodeInput extends FormzInput<String, OtpCodeValidationError> {
     if (isValid) return null;
 
     if (isPure || displayError == OtpCodeValidationError.empty) {
-      // TODO UPDATE THIS
-      return 'input_otp_code_error_empty';
+      return context.l10n.inputOtpErrorEmpty;
     }
 
     if (displayError == OtpCodeValidationError.length) {
-      // TODO UPDATE THIS MAGIC STRIN
-      return 'input_otp_code_error_length';
+      return context.l10n.inputOtpErrorLength;
     }
 
     return null;

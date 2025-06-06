@@ -38,6 +38,7 @@ class DarkTheme {
         useMaterial3: true,
         colorScheme: colorScheme,
         brightness: Brightness.dark,
+        fontFamily: 'poppins',
         appBarTheme: AppBarTheme(
           backgroundColor: colorScheme.surface,
           foregroundColor: colorScheme.onSurface,
