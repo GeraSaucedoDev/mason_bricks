@@ -49,3 +49,12 @@ android{
 update mnifest to add app name from flavor_config.gradle
 
 set ios enviroments
+
+
+
+WIP
+- DARKMODE
+- ONOARDING
+- DATES UTILS
+- IMAGE GENERIC WIDGET CACHE NETWORK IMAGE
+- snippets to agile things
